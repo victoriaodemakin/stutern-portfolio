@@ -1,0 +1,242 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alata&display=swap");
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 3rem;
+  --font-1: "Alata", sans-serif;
+  --font-2: "Josefin Sans", sans-serif;
+  --font-3: "Fira Code", monospace;
+  --bg: #020c1b;
+  --navy-bg: #0a192f;
+  --light-navy: #112240;
+  --light-navy-blue: #233554;
+  --shadow: rgba(2, 12, 27, 0.7);
+  --green-text: #64ffda;
+  --head-text: #ccd6f6;
+  --paragraph-text: #8892b0;
+  --social-icon: #a8b2d1;
+  --dark-slate: #495670;
+  --slate: #8892b0;
+  --light-slate: #98b2d1;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  font-family: "Josefin Sans", sans-serif;
+  font-family: "Fira Code", monospace;
+  background: var(--bg);
+  border: 10px solid;
+  border-color: #64ffda;
+
+  font-family: "Alata", sans-serif;
+}
+
+h1 {
+  font-size: 2.3em;
+  font-weight: 600;
+  font-family: var(--font-2);
+  text-transform: capitalize;
+  text-align: justify;
+  color: var(--head-text);
+  line-height: 1.7em;
+}
+
+img {
+  width: 50%;
+}
+p {
+  font-size: 1em;
+  font-weight: 400;
+  font-family: var(--font-3);
+  text-align: left;
+  color: var(--light-slate);
+  line-height: 2em;
+}
+a {
+  text-decoration: none;
+}
+
+.hero {
+  width: 100%;
+}
+.site-brand-name {
+  width: 40%;
+  cursor: pointer;
+  position: relative;
+}
+.site-brand-name img {
+  width: 50px;
+}
+
+hr {
+  width: 30%;
+  margin-left: 8em;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em 1em;
+  width: 100%;
+}
+.nav-bar {
+  width: 100%;
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+  text-align: right;
+  display: flex;
+  justify-content: space-between;
+  font-family: var(--font-3);
+}
+
+nav ul li a {
+  width: 80%;
+  display: block;
+  text-decoration: none;
+  text-align: left;
+  margin: 0 auto;
+  padding: 1em;
+  padding-bottom: 2em;
+  font-weight: 500;
+  text-transform: capitalize;
+  font-size: 1em;
+  font-family: --font-3;
+  color: var(--paragraph-text);
+}
+
+nav ul li a:hover {
+  color: var(--green-text);
+}
+
+.first-section {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: center;
+  padding: 2em 4em;
+  margin: 0 auto;
+  /* height: 30vh; */
+}
+.text-bio {
+  margin: auto;
+}
+.text-bio img {
+  width: 50px;
+}
+.profile {
+  width: 100%;
+  background-image: url(./vickie.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.text-bio p {
+  font-size: 1em;
+  font-weight: 400;
+  font-family: var(--font-3);
+  text-align: left;
+  color: var(--green-text);
+  margin: 1em 0;
+}
+.text-bio img {
+  width: 10%;
+}
+.text-bio h2 {
+  font-size: 2em;
+  font-weight: 600;
+  font-family: var(--font-1);
+  text-transform: capitalize;
+  color: var(--head-text);
+  text-align: justify;
+}
+.text-bio h3 {
+  font-size: 2em;
+  font-weight: 600;
+  font-family: var(--font-2);
+  text-transform: capitalize;
+  text-align: justify;
+  color: var(--paragraph-text);
+  line-height: 1em;
+}
+span {
+  color: var(--green-text);
+  font-size: 1em;
+  font-family: var(--font-3);
+  font-weight: 400;
+}
+.info-me {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding: 2em 4em;
+}
+.info-me h3 {
+  font-size: 2em;
+  font-weight: 600;
+  font-family: var(--font-2);
+  text-transform: capitalize;
+  text-align: center;
+  color: var(--head-text);
+  line-height: 1.7em;
+}
+.info-warpper {
+  flex: 50;
+}
+.btn {
+  width: 100%;
+  height: 30%;
+  margin: 0.5em 1em;
+  padding: 1em;
+  text-align: center;
+  transition: 0.5s;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid var(--green-text);
+  font-size: 0.7em;
+  text-transform: uppercase;
+  font-family: var(--font-3);
+  background: transparent;
+  color: var(--green-text);
+  border-radius: 5px;
+}
+.skill-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-top: 8em;
+}
+.skill-btn1 {
+  margin-right: 0.5em;
+}
+.skill-btn2 {
+  margin-right: 0.5em;
+}
+.skill-btn3 {
+  margin-right: 0.5em;
+}
+.skill-btn4 {
+  margin-right: 0.5em;
+}
+.skill-btn5 {
+  margin-right: 0.5em;
+}
